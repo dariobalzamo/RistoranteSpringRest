@@ -24,7 +24,11 @@ public class MicroservizioCliente {
 	@Autowired
 	IDaoConto dao_conto;
 	
+	// NOTA: Ragionando per astrazione e divisione dei compiti si ha:
+	// la classe Controller/RestController deve gestire solo la risposta, 
+	// mentre l'implementazione dei metodi CRUD è inserita nel componente Service per caricare i dati nel db;
 	
+	/* ISSUES: MIGRAZIONE DELLE CLASSI RestController in Service.  */
 	
 	// ############################### OPERAZIONI CLIENTE ###############################
 	

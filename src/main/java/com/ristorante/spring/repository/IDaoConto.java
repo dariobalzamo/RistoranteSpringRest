@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.ristorante.spring.model.*;
 import java.util.List;
 
-@Repository
+@Repository // Livello di persistenza dei dati: livello che gestisce la lettura e la scrittura dei dati in memoria (database)
 public interface IDaoConto extends JpaRepository<Conto, Integer> {
 
 //    @Query(nativeQuery = true, value = "SELECT *, COUNT(*) AS quantita, SUM(prezzo) AS totale FROM v_scontrino WHERE numero_prenotazione = ?1 AND pagato = false GROUP BY piatto")

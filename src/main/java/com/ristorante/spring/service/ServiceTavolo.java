@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import com.ristorante.spring.model.Tavolo;
 
-@Service
+@Service // Livello di Servizio: implementa i metodi per la gestione delle operazioni CRUD o altri servizi 
 public class ServiceTavolo implements IServiceTavolo{
 	
 	
